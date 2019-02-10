@@ -1,8 +1,8 @@
-import findBy from "./findBy.js";
+import findBy from './findBy.js';
 
-describe("TEST: find by", () =>{
+describe('TEST: find by', () =>{
 
-	test("search to key name and value damage",() => {
+	test('search to key name and value damage',() => {
 		const finder = findBy('name', 'урон');
 		const results = [
 			{name: 'маг', type: 'character', description: 'Персонаж, обладающий магическими способностями'},
@@ -19,7 +19,7 @@ describe("TEST: find by", () =>{
 		expect(results).toEqual(arrResults);
 	});
 
-	test("search to key type and attack",() => {
+	test('search to key type and attack',() => {
 		const finder = findBy('type', 'attack');
 		const results = [
 			{name: 'маг', type: 'character', description: 'Персонаж, обладающий магическими способностями'},
@@ -37,7 +37,7 @@ describe("TEST: find by", () =>{
 	});
 
 
-	test("forgot about everything and gave nothing",() => {
+	test('forgot about everything and gave nothing', () => {
 		const finder = findBy('', '');
 		const results = [
 			{name: 'маг', type: 'character', description: 'Персонаж, обладающий магическими способностями'},
